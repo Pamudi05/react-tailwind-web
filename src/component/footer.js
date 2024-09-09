@@ -25,11 +25,11 @@ function Footer() {
 
   return (
     <>
-      <div className="h-[150px] bg-black flex justify-center items-center">
-        <footer className="text-center text-white">
+      <div className="min-h-[150px] bg-black flex justify-start md:justify-center items-center md:items-center">
+        <footer className="m-4 text-center text-white">
           <p className="text-sm">Frontend Practice - &copy; 2024 </p>
           <div className="md:w-[800px] cursor-pointer p-4" ref={containerRef}>
-            <ul className="flex justify-center space-x-2 font-mono text-sm font-bold md:space-x-6">
+            <ul className="flex flex-col items-start flex-grow space-x-2 font-mono text-sm font-bold md:justify-center md:flex-row md:space-x-6">
               {items.map((item, index) => (
                 <li
                   key={index}
