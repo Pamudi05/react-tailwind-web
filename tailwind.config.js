@@ -8,6 +8,9 @@ module.exports = {
       colors: {
         antiquewhite: '#FAEBD7',
       },
+      fontFamily: {
+        mono: ["Source Code Pro", 'monospace'],
+      },
     },
   },
   plugins: [],
