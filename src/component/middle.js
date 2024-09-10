@@ -2,14 +2,14 @@ function Middle() {
   return (
     <>
       <div className="flex items-center justify-center min-h-screen px-4 bg-white">
-        <div className="w-full h-auto max-w-screen-lg">
+        <div className="w-[900px] h-auto max-w-screen-lg">
 
           <div className="p-4 text-center">
-            <h1 className="px-4 pt-10 text-2xl font-extrabold leading-tight md:text-4xl md:px-20 md:mb-10">
+            <h1 className="w-auto px-4 pt-10 text-2xl font-bold leading-tight border-black md:text-4xl md:px-20 md:mb-10">
               Frontend Practice provides you with the inspiration and resources
               to create beautiful websites.
             </h1>
-            <h2 className="px-4 mx-4 text-lg font-normal leading-tight md:text-2xl md:mx-20 md:px-20">
+            <h2 className="px-4 py-2 mx-4 text-lg font-normal leading-tight md:text-2xl md:mx-20 md:px-20">
               Here are some ways you can benefit from using our platform:
             </h2>
           </div>
@@ -64,8 +64,8 @@ function Middle() {
           </div>
 
           <div className="mt-10 text-center">
-            <h1 className="text-2xl font-extrabold leading-tight md:text-4xl">
-              Ready to become a better frontend developer?
+            <h1 className="text-[25px] font-bold leading-tight md:text-[25px]">
+              Ready to become a better <br/> frontend developer?
             </h1>
           </div>
 

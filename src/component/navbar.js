@@ -33,19 +33,19 @@ function Header() {
           <h1 className="font-mono font-extrabold">Frontend Practice</h1>
         </div>
 
-        <div className="flex items-center justify-end pr-4 ml-auto md:hidden">
-          <button onClick={toggleMenu} className="text-[20px]">
-            {isOpen ? "✖" : "☰"}
+        <div className="z-10 flex items-center justify-end pr-4 m-8 ml-auto md:hidden">
+          <button onClick={toggleMenu} className= "text-[40px]">
+            {isOpen ? "x" : "☰"}
           </button>
         </div>
 
         <div
           className={`${
             isOpen ? "flex" : "hidden"
-          } absolute top-[60px] left-0 w-full flex-col md:flex md:flex-row md:items-center md:justify-end p-4 md:relative md:top-auto md:w-auto md:mr-20 bg-white `}
+          } absolute top-0 right-0 w-[300px] h-screen md:h-[100%] flex-col md:flex md:flex-row md:items-center md:justify-end p-4 pt-14 md:pt-3 md:relative md:top-auto md:w-auto md:mr-20 bg-white ${isOpen ? "border-l-2 border-black" : ""}`}
           ref={containerRef}
         >
-          <ul className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 justify-end md:justify-end font-mono font-bold text-[16px] md:text-[20px] ">
+          <ul className="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-6 justify-end md:justify-end font-mono font-bold text-[16px] md:text-[20px] ">
             {items.map((item, index) => (
               <li
                 key={index}
